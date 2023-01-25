@@ -1,0 +1,1039 @@
+----DECISION 149 ---                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 600954,
+DEC_ORDER = 149                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND ((ICD_DX_VERSION_IND = '9'
+				AND ICD_DX_CODE NOT BETWEEN '290' AND '319.99')
+				OR
+				(ICD_DX_VERSION_IND <> '9'/*= '10' */  /*UPDATED 201902 to include unknown DX*/     
+				AND SUBSTR(ICD_DX_CODE,1,3) NOT BETWEEN 'F00' AND 'F99'))                                 
+          AND SVC_PROV_SPEC IN ('SPEC-RHEUM','SPEC-RHACA');                                    
+                                          
+                                          
+                                          
+                                          
+----DECISION 150 ---                                
+                                
+                                                    
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 600955,
+DEC_ORDER = 150                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND ((ICD_DX_VERSION_IND = '9'
+				AND ICD_DX_CODE NOT BETWEEN '290' AND '319.99')
+				OR
+				(ICD_DX_VERSION_IND <> '9'/*= '10' */  /*UPDATED 201902 to include unknown DX*/     
+				AND SUBSTR(ICD_DX_CODE,1,3) NOT BETWEEN 'F00' AND 'F99')) 
+          AND SVC_PROV_SPEC IN ('SPEC-RHEUP','SPEC-PRACA');                                    
+                                          
+                                                  
+                                
+----DECISION 151 ---                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 600956,
+DEC_ORDER = 151                               
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND ((ICD_DX_VERSION_IND = '9'
+				AND ICD_DX_CODE NOT BETWEEN '290' AND '319.99')
+				OR
+				(ICD_DX_VERSION_IND <> '9'/*= '10' */  /*UPDATED 201902 to include unknown DX*/     
+				AND SUBSTR(ICD_DX_CODE,1,3) NOT BETWEEN 'F00' AND 'F99'))                                 
+          AND SVC_PROV_SPEC IN ('SPEC-SPORT','SPEC-SMACA');                                    
+                                          
+                                          
+                                          
+                                          
+    ----DECISION 152 ---                                
+                                
+                                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 600957,
+DEC_ORDER = 152                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND ((ICD_DX_VERSION_IND = '9'
+				AND ICD_DX_CODE NOT BETWEEN '290' AND '319.99')
+				OR
+				(ICD_DX_VERSION_IND <> '9'/*= '10' */  /*UPDATED 201902 to include unknown DX*/     
+				AND SUBSTR(ICD_DX_CODE,1,3) NOT BETWEEN 'F00' AND 'F99')) 
+          AND SVC_PROV_SPEC IN ('SPEC-SURGE','SPEC-SUACA');                                    
+                                          
+                                                  
+                                
+----DECISION 153 ---                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 600958,
+DEC_ORDER = 153                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND ((ICD_DX_VERSION_IND = '9'
+				AND ICD_DX_CODE NOT BETWEEN '290' AND '319.99')
+				OR
+				(ICD_DX_VERSION_IND <> '9'/*= '10' */  /*UPDATED 201902 to include unknown DX*/     
+				AND SUBSTR(ICD_DX_CODE,1,3) NOT BETWEEN 'F00' AND 'F99'))                                 
+          AND SVC_PROV_SPEC = 'SPEC-SURGO';                                    
+                                          
+                                          
+                                          
+----DECISION 154 ---                                
+                                          
+                                                    
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 600959,
+DEC_ORDER = 154                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND ((ICD_DX_VERSION_IND = '9'
+				AND ICD_DX_CODE NOT BETWEEN '290' AND '319.99')
+				OR
+				(ICD_DX_VERSION_IND <> '9'/*= '10' */  /*UPDATED 201902 to include unknown DX*/     
+				AND SUBSTR(ICD_DX_CODE,1,3) NOT BETWEEN 'F00' AND 'F99'))                                 
+          AND SVC_PROV_SPEC = 'SPEC-SURGP';                                    
+                                          
+                                                  
+                                
+----DECISION 155 ---                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 600960,
+DEC_ORDER = 155                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND ((ICD_DX_VERSION_IND = '9'
+				AND ICD_DX_CODE NOT BETWEEN '290' AND '319.99')
+				OR
+				(ICD_DX_VERSION_IND <> '9'/*= '10' */  /*UPDATED 201902 to include unknown DX*/     
+				AND SUBSTR(ICD_DX_CODE,1,3) NOT BETWEEN 'F00' AND 'F99'))                                 
+          AND SVC_PROV_SPEC IN ('SPEC-SURGT','SPEC-TCACA');                                    
+                                          
+                                          
+                                          
+----DECISION 156 ---                                
+                                          
+                                                    
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 600961,
+DEC_ORDER = 156                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND ((ICD_DX_VERSION_IND = '9'
+				AND ICD_DX_CODE NOT BETWEEN '290' AND '319.99')
+				OR
+				(ICD_DX_VERSION_IND <> '9'/*= '10' */  /*UPDATED 201902 to include unknown DX*/     
+				AND SUBSTR(ICD_DX_CODE,1,3) NOT BETWEEN 'F00' AND 'F99'))                                 
+          AND SVC_PROV_SPEC = 'SPEC-TRANS';                                    
+                                          
+                                                  
+                                
+----DECISION 157 ---                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 600962,
+DEC_ORDER = 157                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND ((ICD_DX_VERSION_IND = '9'
+				AND ICD_DX_CODE NOT BETWEEN '290' AND '319.99')
+				OR
+				(ICD_DX_VERSION_IND <> '9'/*= '10' */  /*UPDATED 201902 to include unknown DX*/     
+				AND SUBSTR(ICD_DX_CODE,1,3) NOT BETWEEN 'F00' AND 'F99'))                                 
+          AND SVC_PROV_SPEC = 'SPEC-UROLO';                                    
+                                          
+                                          
+                                          
+                                          
+                                                    
+                                
+----DECISION 158 ---                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 600963,
+DEC_ORDER = 158                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND ((ICD_DX_VERSION_IND = '9'
+				AND ICD_DX_CODE NOT BETWEEN '290' AND '319.99')
+				OR
+				(ICD_DX_VERSION_IND <> '9'/*= '10' */  /*UPDATED 201902 to include unknown DX*/     
+				AND SUBSTR(ICD_DX_CODE,1,3) NOT BETWEEN 'F00' AND 'F99'))                                 
+          AND SVC_PROV_SPEC = 'SPEC-UROLP';                                              
+                                                    
+                                        
+                                        
+                                          
+                                          
+---DECISION 159 ---                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 700300,
+DEC_ORDER = 159                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND SVC_PROV_SPEC IN ('SPEC-GYACA','SPEC-GYNEC','SPEC-GYNEO','SPEC-REPEN','SPEC-MIDWI','SPEC-OBGYN','PCPP-MIDWI','PCPP-OBGYN','PCPP-GYNEC','SPEC-OBACA','PCPP-OBACA')                                 
+          AND (CPT4_CODE BETWEEN '99381' AND '99429'                                
+                 OR CPT4_CODE BETWEEN '90476' AND '90749');                                
+                                          
+                                          
+                                          
+                                          
+                                                    
+----DECISION 160 ---                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 700300,
+DEC_ORDER = 160                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND SVC_PROV_SPEC IN ('SPEC-GYACA','SPEC-GYNEC','SPEC-GYNEO','SPEC-REPEN','SPEC-MIDWI','SPEC-OBGYN','PCPP-MIDWI','PCPP-OBGYN','PCPP-GYNEC','SPEC-OBACA','PCPP-OBACA')                                 
+          AND BENEFIT_CATEGORY_CODE IN ('PNA', 'PNC', 'HRA', 'HRC', 'REA', 'RIA', 'REC', 'FLA', 'FLC', 'RPS', 'HBP','RGE', 'RGD', 'FPS');                                    
+                                          
+    
+
+
+                              
+                                          
+---DECISION 161 ---                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 700710,
+DEC_ORDER = 161                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND SVC_PROV_SPEC IN ('SPEC-GYACA','PCPP-OBACA','SPEC-MATER','SPEC-GYNEC','SPEC-GYNEO','SPEC-REPEN','SPEC-MIDWI','SPEC-OBGYN','PCPP-MIDWI','PCPP-OBGYN','PCPP-GYNEC','SPEC-OBACA');                                
+                                          
+                                          
+                                          
+                                
+----DECISION 162 ---                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 700720,
+DEC_ORDER = 162                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND (ICD_DX_VERSION_IND = '9'
+				AND (ICD_DX_CODE BETWEEN '630' AND '677'                                 
+                OR ICD_DX_CODE BETWEEN 'V22' AND 'V27.9')  
+			OR (ICD_DX_VERSION_IND <> '9'/*= '10' */ /*UPDATED 201902 to include unknown DX*/  
+				AND (SUBSTR(ICD_DX_CODE,1,3) BETWEEN 'O00' AND 'O9A'
+                OR SUBSTR(ICD_DX_CODE,1,3) BETWEEN 'Z30' AND 'Z35'
+                OR SUBSTR(ICD_DX_CODE,1,3) = 'Z37'
+                OR SUBSTR(ICD_DX_CODE,1,3) = 'Z39'
+                OR SUBSTR(ICD_DX_CODE,1,5) = 'Z98.5')
+				AND (SUBSTR(ICD_DX_CODE,1,6) NOT IN ('O26.89','O30.02','036.82','075.89','090.89')
+                OR SUBSTR(ICD_DX_CODE,1,5) NOT IN ('O35.7','035.8'))))			 
+          AND PROVIDER_TYPE IN ('AN', 'CL', 'FC', 'VN');                                    
+                                          
+                                          
+                                          
+                                          
+                                          
+----DECISION 163 ---                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 700730,
+DEC_ORDER = 163                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND (ICD_DX_VERSION_IND = '9'
+				AND (ICD_DX_CODE BETWEEN '630' AND '677'                                 
+                OR ICD_DX_CODE BETWEEN 'V22' AND 'V27.9')  
+		  OR (ICD_DX_VERSION_IND <> '9'/*= '10' */  /*UPDATED 201902 to include unknown DX*/    
+				AND (SUBSTR(ICD_DX_CODE,1,3) BETWEEN 'O00' AND 'O9A'
+                OR SUBSTR(ICD_DX_CODE,1,3) BETWEEN 'Z30' AND 'Z35'
+                OR SUBSTR(ICD_DX_CODE,1,3) = 'Z37'
+                OR SUBSTR(ICD_DX_CODE,1,3) = 'Z39'
+                OR SUBSTR(ICD_DX_CODE,1,5) = 'Z98.5')
+				AND (SUBSTR(ICD_DX_CODE,1,6) NOT IN ('O26.89','O30.02','036.82','075.89','090.89')
+                OR SUBSTR(ICD_DX_CODE,1,5) NOT IN ('O35.7','035.8'))))                                
+          AND SVC_PROV_SPEC NOT IN ('SPEC-GYACA','PCPP-OBACA','SPEC-GYNEC', 'SPEC-GYNEO', 'SPEC-REPEN', 'SPEC-MIDWI', 'SPEC-OBGYN', 'PCPP-MIDWI', 'PCPP-OBGYN', 'PCPP-GYNEC','SPEC-OBACA');                                    
+                                          
+                                            
+                                
+                                
+---DECISION 164 ---                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 500610,
+DEC_ORDER = 164                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND SERVICE_TYPE = 'P'                                
+          AND SVC_PROV_SPEC IN ('PCPP-INTER','SPEC-INTSP','SPEC-IMACA','PCPP-IMACA','INST-PHARM')
+          AND ((CPT4_CODE BETWEEN '99381' AND '99429')                                
+                 OR (CPT4_CODE BETWEEN '90476' AND '90749')
+                 OR CPT4_CODE IN ('1030F','4035F','4037F','4274F','G0008','G0919','G8482','G8483','G8484','Q2034','Q2035','Q2036','Q2037','Q2038','Q2039'));                         
+                                          
+                                          
+                                          
+                                          
+                                          
+----DECISION 165 ----                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 500610,
+DEC_ORDER = 165                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND SVC_PROV_SPEC IN ('PCPP-INTER','SPEC-INTSP','SPEC-IMACA','PCPP-IMACA')
+          AND BENEFIT_CATEGORY_CODE IN ('PNA', 'PNC', 'HRA', 'HRC', 'REA', 'REC', 'FLA', 'FLC', 'RPS', 'RIA', 'RIC', 'RGD', 'RGE', 'FPS', 'HBP');                                                                             
+                                                     
+                                  
+                                
+                                
+                                
+---DECISION 166 ---                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 500620,
+DEC_ORDER = 166                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND SERVICE_TYPE = 'P'                                
+          AND SVC_PROV_SPEC IN ('PCPP-FAMPR', 'SPEC-FPHOS','PCPP-FPACA','SPEC-FPACA','INST-HOSP')                                
+           AND (CPT4_CODE BETWEEN '99381' AND '99429'                                
+                 OR CPT4_CODE BETWEEN '90476' AND '90749'
+                 OR CPT4_CODE IN ('1030F','4035F','4037F','4274F','G0008','G0919','G8482','G8483','G8484','Q2034','Q2035','Q2036','Q2037','Q2038','Q2039'));                        
+                                          
+                                          
+                                          
+                                          
+                                          
+----DECISION 167 ----                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 500620,
+DEC_ORDER = 167                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND SVC_PROV_SPEC IN ('PCPP-FAMPR', 'SPEC-FPHOS','PCPP-FPACA','SPEC-FPACA')                              
+           AND BENEFIT_CATEGORY_CODE IN ('PNA', 'PNC', 'HRA', 'HRC', 'REA', 'REC', 'FLA', 'FLC', 'RPS', 'RIA', 'RGD', 'RIC', 'RGE', 'FPS', 'HBP');                                                                             
+                                                               
+                                
+                                
+                                
+                                
+                                
+---DECISION 168 ---                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 500630,
+DEC_ORDER = 168                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND SERVICE_TYPE = 'P'                                
+          AND SVC_PROV_SPEC IN ('PCPP-PEDIA', 'SPEC-PEDIA','SPEC-PEACA','PCPP-PEACA')                                
+           AND (CPT4_CODE BETWEEN '99381' AND '99429'                                
+                 OR CPT4_CODE BETWEEN '90476' AND '90749'
+                 OR CPT4_CODE IN ('1030F','4035F','4037F','4274F','G0008','G0919','G8482','G8483','G8484','Q2034','Q2035','Q2036','Q2037','Q2038','Q2039'));                          
+                                          
+                                          
+                                          
+                                          
+                                          
+----DECISION 169 ----                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 500630,
+DEC_ORDER = 169                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND SVC_PROV_SPEC IN ('PCPP-PEDIA','SPEC-PEDIA','SPEC-PEACA','PCPP-PEACA')                                 
+           AND BENEFIT_CATEGORY_CODE IN ('PNA', 'PNC', 'HRA', 'HRC', 'REA', 'REC', 'FLA', 'FLC', 'RPS', 'RIA', 'RIC','RGD','RGE', 'FPS', 'HBP');                                                                             
+                                                               
+                                
+                                          
+                                          
+                                
+---DECISION 170 ---                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 500640,
+DEC_ORDER = 170                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND SERVICE_TYPE = 'P'                                
+          AND SVC_PROV_SPEC LIKE 'PCPP%'                                
+           AND (CPT4_CODE BETWEEN '99381' AND '99429'                                
+                 OR CPT4_CODE BETWEEN '90476' AND '90749'
+                 OR CPT4_CODE IN ('1030F','4035F','4037F','4274F','G0008','G0919','G8482','G8483','G8484','Q2034','Q2035','Q2036','Q2037','Q2038','Q2039'));                              
+                                          
+                                          
+                                          
+                                          
+                                          
+----DECISION 171 ----                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 500640,
+DEC_ORDER = 171                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND SVC_PROV_SPEC LIKE 'PCPP%'                                
+           AND BENEFIT_CATEGORY_CODE IN ('PNA', 'PNC', 'HRA', 'HRC', 'REA', 'REC', 'FLA', 'FLC', 'RPS', 'RIA', 'RIC', 'RGD', 'RGE', 'FPS', 'HBP');                                                                             
+                                                               
+                                
+                                
+                                          
+                                          
+----DECISION 172 ---                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 500510,
+DEC_ORDER = 172                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND PROVIDER_TYPE = 'ID'                                
+          AND SVC_PROV_SPEC IN ('PCPP-INTER','SPEC-INTSP','SPEC-IMACA','PCPP-IMACA');                                
+                                          
+                                        
+                                
+                                          
+                                
+                                
+----DECISION 173 ---                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 500520,
+DEC_ORDER = 173                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND PROVIDER_TYPE = 'ID'                                
+          AND SVC_PROV_SPEC IN ('PCPP-FAMPR', 'SPEC-FPHOS','PCPP-FPACA','SPEC-FPACA');                                
+                                          
+                                                    
+                                    
+                                    
+                                    
+                                
+----DECISION 174 ---                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 500530,
+DEC_ORDER = 174                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND PROVIDER_TYPE = 'ID'                                
+          AND SVC_PROV_SPEC IN ('PCPP-PEDIA', 'SPEC-PEDIA','SPEC-PEACA','PCPP-PEACA');                                
+                                              
+                                
+                                
+                                
+                                
+                                
+----DECISION 175 ---                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 500540,
+DEC_ORDER = 175                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND PROVIDER_TYPE = 'ID'                                
+          AND SVC_PROV_SPEC LIKE 'PCP%';                                
+                                          
+                                          
+                                    
+                                    
+                                    
+                                    
+                                          
+----DECISION 176 ---                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 1100310,
+DEC_ORDER = 176                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND LOCATION_CODE = 'O'                                
+           AND BENEFIT_CATEGORY_CODE IN ('PTB', 'PTM', 'PTP', 'PTT', 'ELC', 'ELS', 'MIE', 'MIF', 'MIH', 'MOH', 'MOE','MPF', 'MOF', 'MPH', 'MRL', 'BHG', 'BHO', 'BHV')                                 
+          AND PROVIDER_TYPE IN ('AN', 'VN', 'FC', 'CL');                                
+                                          
+                                
+                                
+                                
+----DECISION 177 ---                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 1100320,
+DEC_ORDER = 177                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND LOCATION_CODE = 'O'                                
+           AND BENEFIT_CATEGORY_CODE IN ('COE', 'COF', 'COH', 'CPF', 'CPH')                                 
+          AND PROVIDER_TYPE IN ('AN', 'VN', 'FC', 'CL');                                
+                                          
+                                          
+
+----DECISION 178 ---                                
+       
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 1100320,
+DEC_ORDER = 178                                
+WHERE     
+        NEW_FSS_UPDATE IS NULL 
+		AND LOCATION_CODE = 'O'
+		AND (ICD_DX_VERSION_IND = '9'                            
+			AND (ICD_DX_CODE BETWEEN '291' AND '292.99'                                
+                OR ICD_DX_CODE BETWEEN '303' AND '305.99')                                 
+			OR
+			(ICD_DX_VERSION_IND <> '9'/*= '10' */  /*UPDATED 201902 to include unknown DX*/                                
+			AND (SUBSTR(ICD_DX_CODE,1,3) BETWEEN 'F10' AND 'F19'                                
+                OR SUBSTR(ICD_DX_CODE,1,3) IN ('F55'))))                                 
+        AND PROVIDER_TYPE IN ('AN', 'VN', 'FC', 'CL');                                         
+                                          
+                                          
+                                          
+   
+----DECISION 179 ---                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 1100310,
+DEC_ORDER = 179                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND LOCATION_CODE = 'O'                                
+          AND ((ICD_DX_VERSION_IND = '9'             
+				AND ICD_DX_CODE BETWEEN '290' AND '319.99')
+				OR
+				(ICD_DX_VERSION_IND <> '9'/*= '10' */  /*UPDATED 201902 to include unknown DX*/                 
+				AND SUBSTR(ICD_DX_CODE,1,3) BETWEEN 'F01' AND 'F99'))                                
+          AND PROVIDER_TYPE IN ('AN', 'VN', 'FC', 'CL');                                
+                                          
+                                         
+                                                              
+                                          
+                                          
+                                          
+----DECISION 180 ---                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 1100310,
+DEC_ORDER = 180                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND LOCATION_CODE = 'O'                                
+          AND CPT4_CODE BETWEEN '90801' AND '90911'                                
+          AND PROVIDER_TYPE IN ('AN', 'VN', 'FC', 'CL');                                                              
+
+                   
+                                
+                                    
+                                    
+                                
+                                    
+----DECISION 181 ---                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 1100610,
+DEC_ORDER = 181                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND SVC_PROV_SPEC = 'SPEC-PSOLO';                                    
+                                          
+                                         
+                                         
+                                          
+                                          
+                                          
+----DECISION 182 ---                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 1100620,
+DEC_ORDER = 182                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND SVC_PROV_SPEC IN ('SPEC-PSYCH','SPEC-PSACA');                                    
+                                          
+                                          
+                                          
+                                          
+----DECISION 183 ---                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 1100630,
+DEC_ORDER = 183                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND SVC_PROV_SPEC = 'SPEC-PSYCP';                                    
+                                          
+                                          
+                                                    
+                                
+                                
+                                
+                                
+                                          
+----DECISION 184 ---                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 1100640,
+DEC_ORDER = 184                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND SVC_PROV_SPEC = 'SPEC-SOCIA';                                    
+                                          
+                                          
+                                          
+                                          
+                                          
+                                          
+                                                                  
+----DECISION 185 ---                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 1100650,
+DEC_ORDER = 185                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND REVENUE_CODE IN ('0114','0116','0124','0126','0134','0136','0144','0146','0154','0156','0204') 
+          AND SERVICE_TYPE <> 'F';                                
+                                          
+                                          
+                                          
+                                          
+                                          
+                                          
+----DECISION 186 ---                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 1100650,
+DEC_ORDER = 186                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND ((CPT4_CODE BETWEEN '90801' AND '90911')                                
+                 OR (CPT4_CODE BETWEEN '96150' AND '96155'));                                
+                                          
+                                          
+                                          
+                                          
+                                          
+----DECISION 187 ---                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 1100650,
+DEC_ORDER = 187                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND BENEFIT_CATEGORY_CODE IN ('COE', 'COF', 'COH', 'CPF', 'CPH', 'PTB', 'PTM', 'PTP', 'ELC', 'ELS', 'MIF','MIH', 'MOH', 'MOE', 'MPF', 'MOF', 'MPH', 'MRL','MPC');                                    
+                                          
+                                          
+                                          
+                                          
+                                          
+                                          
+----DECISION 188 ---                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 1100650,
+DEC_ORDER = 188                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND ((ICD_DX_VERSION_IND = '9'             
+				AND ICD_DX_CODE BETWEEN '290' AND '319.99')
+				OR
+				(ICD_DX_VERSION_IND <> '9'/*= '10' */  /*UPDATED 201902 to include unknown DX*/                      
+				AND SUBSTR(ICD_DX_CODE,1,3) BETWEEN 'F01' AND 'F99'))  ;                               
+                                          
+                                          
+                                          
+                                          
+                                          
+                                
+                                
+                                          
+----DECISION 189 ---                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 800100,
+DEC_ORDER = 189                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND SVC_PROV_SPEC IN ('INST-ORTPR', 'INST-DME');                                    
+                                          
+                                          
+                                          
+                                          
+                                          
+                                          
+----DECISION 190 ---                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 800100,
+DEC_ORDER = 190                               
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND ((CPT4_CODE BETWEEN 'L0000' AND 'L4999')                                
+                OR (CPT4_CODE BETWEEN 'V5000' AND 'V5999')                                
+                 OR (REVENUE_CODE LIKE '029%'));                                
+                                          
+                                          
+                                          
+                                          
+                                          
+----DECISION 191 ---                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 800200,
+DEC_ORDER = 191                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND (REVENUE_CODE IN ('0621', '0622')                                
+                 OR REVENUE_CODE LIKE '027%');                                
+                                          
+                                          
+                                          
+                                          
+                                          
+                                          
+----DECISION 192 ---                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 800300,
+DEC_ORDER = 192                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND SVC_PROV_SPEC = 'INST-AMBUL';                                
+                                          
+                                          
+                                          
+                                          
+                                          
+                                          
+----DECISION 193 ---                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 800300,
+DEC_ORDER = 193                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND BENEFIT_CATEGORY_CODE IN ('AMA', 'AME', 'AMN');                                    
+                                          
+                                          
+                                          
+                                    
+                                     
+                                          
+----DECISION 194 ---                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 800610,
+DEC_ORDER = 194                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND SVC_PROV_SPEC = 'INST-HOMEH';                                
+                                          
+                                
+                                
+                                
+                                      
+                                          
+----DECISION 195 ---                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 800610,
+DEC_ORDER = 195                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND BENEFIT_CATEGORY_CODE IN ('HHC', 'PDN');                                
+                                          
+                                          
+                                          
+                                          
+                                          
+                                              
+----DECISION 196 ---                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 800620,
+DEC_ORDER = 196                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND BENEFIT_CATEGORY_CODE = 'HPC';                                
+                                          
+                                          
+                                          
+                                            
+                                          
+                                  
+                                    
+----DECISION 197 ---                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 800620,
+DEC_ORDER = 197                               
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND SVC_PROV_SPEC ='INST-HOSPC';                                
+                                          
+                                
+                                
+                                
+                                      
+                                          
+                                          
+----DECISION 198 ---                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 800560,
+DEC_ORDER = 198                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND SVC_PROV_SPEC = 'INST-INFTH';                                
+                                          
+                                          
+                                          
+                                          
+                                          
+                                          
+----DECISION 199 ---                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 800700,
+DEC_ORDER = 199                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND PROVIDER_TYPE IN ('VN','AN');                                
+                                          
+                                          
+                                          
+                                          
+                                          
+                                          
+----DECISION 200 ---                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 300400,
+DEC_ORDER = 200                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND HIAA_POS = '62';                                
+                                          
+                                          
+                                          
+                                          
+                                          
+                                          
+----DECISION 201 ---                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 400100,
+DEC_ORDER = 201                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND BENEFIT_CATEGORY_CODE = 'ANL'                                
+          AND SERVICE_TYPE <> 'P'                                
+          AND PROVIDER_TYPE IN ('AN', 'CL', 'FC', 'VN');                                    
+                                          
+                                          
+                                          
+                                          
+                                          
+                                          
+                                          
+----DECISION 202 ---                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 400200,
+DEC_ORDER = 202                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND BENEFIT_CATEGORY_CODE = 'ANL'                                
+          AND SERVICE_TYPE IN ('P', 'SM');                                
+                                          
+                                          
+                                          
+                                          
+                                          
+                                          
+                                
+----DECISION 203 ---                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 600999,
+DEC_ORDER = 203                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND SVC_PROV_SPEC LIKE 'SPEC%';                                              
+                                                    
+                                          
+                                              
+
+                                
+----DECISION 204 ---                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 200100,
+DEC_ORDER = 204                               
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND CPT4_CODE IN ('G0121','G0105')                                
+          AND LOCATION_CODE = 'O'                                
+          AND PROVIDER_TYPE IN ('FC', 'CL');                                
+                                
+                                          
+                                      
+----DECISION 205 ---                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 400510,
+DEC_ORDER = 205                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND (CPT4_CODE BETWEEN 'Q9945' AND 'Q9954'                                
+                OR CPT4_CODE BETWEEN 'Q9958' AND 'Q9964'                                
+              OR CPT4_CODE BETWEEN '62263' AND '62264'                                
+              OR CPT4_CODE BETWEEN '62270' AND '62273'                                
+              OR CPT4_CODE BETWEEN '62280' AND '62282'                                
+              OR CPT4_CODE BETWEEN '62310' AND '62319'                                
+              OR CPT4_CODE = '0027T')                                
+           AND LOCATION_CODE = 'O'                                
+          AND PROVIDER_TYPE IN ('FC', 'CL', 'AN', 'VN');                                               
+                                
+                                
+                                          
+                                          
+                                          
+                                          
+                                          
+----DECISION 206 ---                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 200300,
+DEC_ORDER = 206                               
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND (CPT4_CODE BETWEEN 'C1000' AND 'C9999'                                
+                 OR CPT4_CODE BETWEEN 'G0000' AND 'G9999'                                
+                OR CPT4_CODE BETWEEN 'Q0000' AND 'Q9999'                                
+                OR CPT4_CODE BETWEEN 'S0000' AND 'S9999')                                
+           AND LOCATION_CODE = 'O'                                
+          AND PROVIDER_TYPE IN ('FC', 'CL');                                           
+                                                    
+                                          
+                                              
+                                    
+                                    
+----DECISION 207 ---                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 800200,
+DEC_ORDER = 207                               
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND (CPT4_CODE BETWEEN 'C1000' AND 'C9999'                                
+                 OR CPT4_CODE BETWEEN 'G0000' AND 'G9999'                                
+               OR CPT4_CODE BETWEEN 'Q0000' AND 'Q9999'                                
+                OR CPT4_CODE BETWEEN 'S0000' AND 'S9999');                                
+                                          
+                                          
+                                          
+                                      
+----DECISION 208 ---                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 200260,
+DEC_ORDER = 208                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND BENEFIT_CATEGORY_CODE IN ('FLA', 'FLC', 'REA', 'REC', 'RGE', 'RIA', 'RIC', 'RPS') 
+          AND LOCATION_CODE = 'O'                                
+          AND SERVICE_TYPE IN ('F','SM');                                              
+                                          
+                                          
+                                          
+                                          
+----DECISION 209 ---                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 200300,
+DEC_ORDER = 209                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND LOCATION_CODE = 'O'                                
+          AND (PROVIDER_TYPE = 'FC' OR SERVICE_TYPE = 'F');                                          
+                                                    
+                                          
+                                              
+                                    
+                                    
+                                    
+----DECISION 210 ---                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 200300,
+DEC_ORDER = 210                               
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND SVC_PROV_SPEC LIKE 'INST%';                                    
+                                          
+                                          
+                                
+                                
+----DECISION 211 ---                                
+                                
+                                
+UPDATE FSS_MC_TEST SET                                  
+NEW_FSS_UPDATE = 600999,
+DEC_ORDER = 211                                
+WHERE                                 
+          NEW_FSS_UPDATE IS NULL                                     
+          AND SVC_PROV_SPEC IN ('UN','UNKNOWN')                                
+          AND SERVICE_TYPE IN ('P','SM');     
